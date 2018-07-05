@@ -1,5 +1,9 @@
 @import '~antd/dist/antd.css';
 
+.fetch-btn {
+  margin-right: 5px;
+}
+
 .App {
   text-align: center;
 }

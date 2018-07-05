@@ -56,17 +56,20 @@ class App extends Component {
               <p className="App-intro">
                 <Radio.Group>
                   <Link to={'/users'}>
-                    <Button size='large' onClick={() => this.handleFetchUsers()} type="primary">
+                    <Button className='fetch-btn' size='large' 
+                    onClick={() => this.handleFetchUsers()} type="primary">
                       <Icon type="team" />Show All In Alphabeitcal Order
                     </Button>
                   </Link>
                   <Link to={'/users'}>
-                    <Button size='large' onClick={() => this.handleFetchSpecificUsers('?cohortId=2')} type="primary">
+                    <Button className='fetch-btn' size='large' 
+                    onClick={() => this.handleFetchSpecificUsers('?cohortId=2')} type="primary">
                       <Icon type="smile-o" />Seniors
                     </Button>
                   </Link>
                   <Link to={'/users'}>
-                    <Button  size='large' onClick={() => this.handleFetchSpecificUsers('?cohortId=1')} type="primary">
+                    <Button className='fetch-btn' size='large' 
+                    onClick={() => this.handleFetchSpecificUsers('?cohortId=1')} type="primary">
                       Juniors<Icon type="frown-o" />
                     </Button>
                   </Link>
