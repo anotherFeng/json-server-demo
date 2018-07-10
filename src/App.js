@@ -50,7 +50,7 @@ class App extends Component {
           <div>
             <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
-              <h1 className="App-title">Welcome to Json-Server-Demo powered by Ant-Design and CRA</h1>
+              <h1 className="App-title">Welcome to Json-Server-Demo</h1>
             </header>
             <Divider/>
               <p className="App-intro">
@@ -70,7 +70,7 @@ class App extends Component {
                   <Link to={'/users'}>
                     <Button className='fetch-btn' size='large' 
                     onClick={() => this.handleFetchSpecificUsers('?cohortId=1')} type="primary">
-                      Juniors<Icon type="frown-o" />
+                      Juniors<Icon type="smile-o" />
                     </Button>
                   </Link>
                 </Radio.Group>
@@ -84,7 +84,6 @@ class App extends Component {
           </div>
         </BrowserRouter>
       </div>
-
     );
   }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { List } from 'antd';
 
 class Users extends Component {
@@ -22,6 +23,12 @@ class Users extends Component {
   }
 
   render(){
+    const transitionOptions = {
+      transitionName: "fade",
+      transitionEnterTimeout: 500,
+      transitionLeaveTimeout: 500
+    }
+
     return !this.props.users ? <div/> :
     <List 
       size="small"
@@ -39,7 +46,9 @@ class Users extends Component {
           title='User ID'
         />
       </List.Item>
-      {this.renderUser()}
+      <ReactCSSTransitionGroup {...transitionOptions}>
+        {this.renderUser()}
+      </ReactCSSTransitionGroup>
     </List>
   }
 }

@@ -4,6 +4,24 @@
   margin-right: 5px;
 }
 
+.fade-enter {
+  right: 100px;
+}
+
+.fade-enter-active {
+  right: 0px;
+  transition: .5s ease-in all;
+}
+
+.fade-leave {
+  opacity: 1.0;
+}
+
+.fade-leave-active {
+  opacity: 0;
+  transition: .5s ease-out all;
+}
+
 .App {
   text-align: center;
 }
